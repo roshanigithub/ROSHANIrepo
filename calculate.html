@@ -1,0 +1,37 @@
+<html>
+
+<head></head>
+
+<body>
+    <br />
+    Enter Value
+    <input type="text" id="txtNumber1" value="0" />
+    <input type="text" id="txtnumber2" value="0" />
+    <input type="button" value="+" onclick="calculate(1)" />
+   // <input type="button" value="*" onclick="calculate(2)" />
+    <input type="text" id="txtoutput" value="0" />
+
+    <label id="txtmessage"></label>
+</body>
+
+</html>
+<script>
+    function calculate(input) {
+        switch (input) 
+        {
+            case 1:
+                var x = parseInt(document.getElementById("txtnumber1").value);
+                var y = parseInt(document.getElementById("txtnumber2").value);
+                document.getElementById("txtoutput").value = x + y;
+                break;
+
+            case 2:
+                document.getElementById("txtoutput").value = x * y;
+                break;
+
+            default:
+                document.getElementById("txtoutput").innerHTML = "Please select correct button"
+        }
+    }
+
+</script>

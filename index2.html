@@ -1,0 +1,49 @@
+<html>
+    <head></head>
+<body>
+    This is my first HTML page
+    <br/>
+    Enter Value
+    <input type="text" id="txtNumber" value="0" />
+    <input type="button" value="Submit" onclick="CheckNumber()"/>
+    <label id="txtMessage"> </label>
+</body>
+</html>
+
+ 
+
+<script>
+ 
+
+function CheckNumber()
+{
+  
+
+var x=document.getElementById("txtNumber").value;
+    if(x%2==0)
+{
+    document.getElementById("txtMessage").innerHTML="This is an Even Number";
+}
+else{
+    document.getElementById("txtMessage").innerHTML="This is an Odd Number";
+}
+}
+
+ 
+
+console.log(document.getElementById("txtNumber").value)
+var x=2;
+var y=3;
+console.log(x+y);
+if(x%2==0)
+{
+    console.log("EVEN");
+}
+else{
+    console.log("ODD");
+}
+
+ 
+
+
+</script>

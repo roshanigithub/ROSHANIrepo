@@ -1,0 +1,27 @@
+<html>
+<body>
+This is my firts HTML page
+<input type="text" id="txtnumber" value="0" />  
+<input type="button" value="Submit" onclick="Checknumber()"/>
+<label id="txtmessage"></label>
+</body>
+</html>
+<script>
+    //alert("i am first Javascript page")
+    //console.log("Hello im in Console")
+   // var x=1;
+    //var y=2;
+    //console.log(x+y);
+function checknumber()
+{
+    var X= document.getElementById("txtNumber").value;
+if (X > 18)
+{document.getElementById("txtmessage").innerHTML="i'm eligible for voting";}
+
+else 
+{console.getElementById("txtmessage").innerHTML="I'm not eligible for voting";}
+
+}
+
+
+</script>
